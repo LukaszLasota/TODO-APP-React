@@ -1,3 +1,12 @@
+:root {
+  --blue-gradient: rgb(106, 135, 228);
+  --purpule-gradient: rgb(109, 59, 156);
+  --white: rgb(255, 255, 255);
+  --radius-small: 5px;
+  --radius-medium: 10px;
+  --red: red;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +15,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    90deg,
+    var(--blue-gradient) 0%,
+    var(--purpule-gradient) 100%
+  );
+}
+
+h1 {
+  color: var(--white);
 }
 
 code {
